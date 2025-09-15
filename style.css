@@ -13,16 +13,16 @@
     padding-top: 25px;
 }
 #container{
-    width: 350px;
+    width: 380px;
     height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: black;
     border: 2px solid black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
 }
 #Div1{
    width: 100%;
@@ -42,9 +42,9 @@
 #hamburger span {
     display: block;
     width: 30px;       /* bar length */
-    height: 4px;       /* bar thickness */
-    background-color: black;
-    margin: 5px 0;     /* space between bars */
+    height: 3px;       /* bar thickness */
+    background-color: orange;
+    margin: 3px 0;     /* space between bars */
     border-radius: 2px;
 }
 #resultDiv{
@@ -62,6 +62,8 @@
     text-align: right;
     border: none;
     outline: none;
+    background-color: black;
+    color: white;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -77,8 +79,17 @@
 .btnStyle{
     padding: 20px;
     border: none;
-    background-color: #5d5d5d;
+    background-color: #343434;
     border-radius: 50%;
+    font-size: 30px;
     color: white;
     cursor: pointer;
+}
+.btnNew{
+    color: white;
+    background-color: grey;
+}
+.btnOther{
+    color: white;
+    background-color: orange;
 }
