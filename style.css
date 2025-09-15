@@ -3,5 +3,82 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+#container{
+    width: 350px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+#Div1{
+   width: 100%;
+    height: 30%;   /* overall height of Div1 (relative to container) */
+    display: flex;
+    flex-direction: column;
+}
+#hamburger {
+    flex: 3; /* takes ~30% of Div1 height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    cursor: pointer;
+}
+#hamburger span {
+    display: block;
+    width: 30px;       /* bar length */
+    height: 4px;       /* bar thickness */
+    background-color: black;
+    margin: 5px 0;     /* space between bars */
+    border-radius: 2px;
+}
+#resultDiv{
+    flex: 7;             /* 70% of height */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 10px
+}
+#result{
+    width: 90%;
+    height: 50px;
+    font-size: 40px;
+    text-align: right;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+#Div2{
+    width: 100%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    grid-template-rows: repeat(5, auto);  /* 5 rows (auto height) */
+    gap: 10px;  
+    margin: auto; 
+}
+.btnStyle{
+    padding: 20px;
+    border: none;
+    background-color: #5d5d5d;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
 }
