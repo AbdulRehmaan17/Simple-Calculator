@@ -25,13 +25,39 @@
     padding: 10px;
 }
 #Div1{
-   width: 100%;
+    width: 100%;
     height: 30%;   /* overall height of Div1 (relative to container) */
     display: flex;
     flex-direction: column;
+    padding-bottom: 10px;
 }
-#hamburger {
-    flex: 3; /* takes ~30% of Div1 height */
+#menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* space between rows */
+  cursor: pointer;
+  padding-top: 8px;
+  padding-left: 4px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 6px; /* space between dot and line */
+}
+.dot {
+  width: 6.5px;
+  height: 3px;
+  background-color: orange;
+  border-radius: 50%; /* makes it a circle */
+}
+.line {
+  width: 27px;
+  height: 3px;
+  background-color: orange;
+  border-radius: 3px; /* rounded edges like your image */
+}
+/* #hamburger {
+    flex: 3; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,31 +67,31 @@
 }
 #hamburger span {
     display: block;
-    width: 30px;       /* bar length */
-    height: 3px;       /* bar thickness */
+    width: 30px;       
+    height: 3px;          
     background-color: orange;
-    margin: 3px 0;     /* space between bars */
+    margin: 3px 0;    
     border-radius: 2px;
-}
+} */
 #resultDiv{
     flex: 7;             /* 70% of height */
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     padding: 0px 10px
 }
 #result{
     width: 90%;
     height: 50px;
-    font-size: 40px;
+    font-size: 55px;
     text-align: right;
     border: none;
     outline: none;
     background-color: black;
     color: white;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 #Div2{
     width: 100%;
